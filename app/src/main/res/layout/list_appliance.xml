@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:background="#e2e2e2"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:padding="15dp"
+        android:src="@drawable/ic_lamp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="LED"
+        android:textColor="#555"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_compat"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:checked="false"
+        android:textSize="20sp"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:showText="true"/>
+
+</RelativeLayout>
